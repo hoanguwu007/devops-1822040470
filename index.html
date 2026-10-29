@@ -69,46 +69,7 @@
                 </div>
             </section>
 
-            <!-- Card 2: CI/CD Pipeline Workflow -->
-            <section class="card workflow-card">
-                <div class="card-header">
-                    <div class="icon-wrapper">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                        </svg>
-                    </div>
-                    <h2>Quy Trình Pipeline (CI/CD) - Phiên bản 2.0</h2>
-                </div>
-                <div class="card-body">
-                    <div class="pipeline-steps">
-                        <div class="pipeline-step">
-                            <div class="step-num">1</div>
-                            <div class="step-content">
-                                <h3>Git Push</h3>
-                                <p>Đẩy bản sửa lỗi & v2.0 lên nhánh <code>main</code></p>
-                            </div>
-                        </div>
-                        <div class="pipeline-arrow">➔</div>
-                        <div class="pipeline-step">
-                            <div class="step-num">2</div>
-                            <div class="step-content">
-                                <h3>Job Check</h3>
-                                <p>Kiểm tra thẻ <code>&lt;title&gt;</code> đã được khôi phục</p>
-                            </div>
-                        </div>
-                        <div class="pipeline-arrow">➔</div>
-                        <div class="pipeline-step">
-                            <div class="step-num">3</div>
-                            <div class="step-content">
-                                <h3>Job Deploy</h3>
-                                <p>Cập nhật phiên bản 2.0 lên GitHub Pages</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Card 3: Interactive Features (JavaScript) -->
+            <!-- Card 2: Interactive Features (JavaScript) -->
             <section class="card demo-card">
                 <div class="card-header">
                     <div class="icon-wrapper">
@@ -137,39 +98,6 @@
                         <button id="btn-verify" class="primary-btn">Chạy kiểm tra tự động v2.0</button>
                     </div>
                     <div id="verification-result" class="verify-box hidden"></div>
-                </div>
-            </section>
-
-            <!-- Card 4: Action Status and Checklist -->
-            <section class="card checklist-card">
-                <div class="card-header">
-                    <div class="icon-wrapper">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
-                    </div>
-                    <h2>Nhật Ký Thực Nghiệm Pipeline</h2>
-                </div>
-                <div class="card-body">
-                    <ul class="checklist">
-                        <li class="check-item passed">
-                            <span class="check-icon">✓</span>
-                            <span>Lần 1: Push bản 1.0 ban đầu ➔ Pipeline PASSED</span>
-                        </li>
-                        <li class="check-item passed">
-                            <span class="check-icon" style="background: rgba(239, 68, 68, 0.2); color: #ef4444;">✗</span>
-                            <span>Lần 2: Xóa thẻ &lt;title&gt; ➔ Job Check FAILED (Chặn lỗi)</span>
-                        </li>
-                        <li class="check-item passed">
-                            <span class="check-icon">✓</span>
-                            <span>Lần 3: Khôi phục & nâng cấp v2.0 ➔ Pipeline PASSED</span>
-                        </li>
-                        <li class="check-item passed">
-                            <span class="check-icon">✓</span>
-                            <span>Website được cập nhật công khai lên GitHub Pages</span>
-                        </li>
-                    </ul>
                 </div>
             </section>
         </main>
