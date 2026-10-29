@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>DevOps CI/CD - Vũ Hoàng Anh - 1822040470 (Phiên bản 2.0)</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,14 +18,15 @@
         <header class="header">
             <div class="badge-status">
                 <span class="status-dot"></span>
-                <span>CI/CD Automated Deployment Active</span>
+                <span>CI/CD Pipeline v2.0 - Khắc phục lỗi & Deploy thành công!</span>
             </div>
             <h1 id="main-title">Vũ Hoàng Anh - 1822040470</h1>
-            <p class="subtitle">BÀI TẬP CÁ NHÂN: TRIỂN KHAI WEBSITE TỰ ĐỘNG VỚI GITHUB ACTIONS</p>
+            <p class="subtitle">BÀI TẬP CÁ NHÂN: TRIỂN KHAI WEBSITE TỰ ĐỘNG VỚI GITHUB ACTIONS (PHIÊN BẢN 2.0)</p>
             <div class="meta-tags">
                 <span class="tag">Môn: Phát triển ứng dụng Web</span>
-                <span class="tag tag-accent">Version 1.0</span>
-                <span class="tag tag-success">GitHub Pages</span>
+                <span class="tag tag-accent">Version 2.0</span>
+                <span class="tag tag-success">Pipeline Passed</span>
+                <span class="tag">GitHub Pages</span>
             </div>
         </header>
 
@@ -57,12 +58,12 @@
                             <span class="value code-font">devops-1822040470</span>
                         </li>
                         <li>
-                            <span class="label">GitHub User:</span>
-                            <span class="value code-font">hoanguwu007</span>
+                            <span class="label">Phiên bản hiện tại:</span>
+                            <span class="value highlight">Phiên bản 2.0 (Đã kiểm thử CI/CD)</span>
                         </li>
                         <li>
                             <span class="label">Trạng thái:</span>
-                            <span class="badge badge-online">Đang hoạt động (Online)</span>
+                            <span class="badge badge-online">Đang hoạt động (Online v2.0)</span>
                         </li>
                     </ul>
                 </div>
@@ -76,7 +77,7 @@
                             <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                         </svg>
                     </div>
-                    <h2>Quy Trình Pipeline (CI/CD)</h2>
+                    <h2>Quy Trình Pipeline (CI/CD) - Phiên bản 2.0</h2>
                 </div>
                 <div class="card-body">
                     <div class="pipeline-steps">
@@ -84,7 +85,7 @@
                             <div class="step-num">1</div>
                             <div class="step-content">
                                 <h3>Git Push</h3>
-                                <p>Đẩy mã nguồn lên nhánh <code>main</code> trên GitHub</p>
+                                <p>Đẩy bản sửa lỗi & v2.0 lên nhánh <code>main</code></p>
                             </div>
                         </div>
                         <div class="pipeline-arrow">➔</div>
@@ -92,7 +93,7 @@
                             <div class="step-num">2</div>
                             <div class="step-content">
                                 <h3>Job Check</h3>
-                                <p>Kiểm tra đủ 3 file & thẻ <code>&lt;title&gt;</code></p>
+                                <p>Kiểm tra thẻ <code>&lt;title&gt;</code> đã được khôi phục</p>
                             </div>
                         </div>
                         <div class="pipeline-arrow">➔</div>
@@ -100,7 +101,7 @@
                             <div class="step-num">3</div>
                             <div class="step-content">
                                 <h3>Job Deploy</h3>
-                                <p>Tự động xuất bản lên GitHub Pages</p>
+                                <p>Cập nhật phiên bản 2.0 lên GitHub Pages</p>
                             </div>
                         </div>
                     </div>
@@ -133,7 +134,7 @@
                     </div>
                     <div class="interactive-actions">
                         <button id="btn-theme" class="secondary-btn">Đổi giao diện Sáng / Tối</button>
-                        <button id="btn-verify" class="primary-btn">Chạy kiểm tra tự động</button>
+                        <button id="btn-verify" class="primary-btn">Chạy kiểm tra tự động v2.0</button>
                     </div>
                     <div id="verification-result" class="verify-box hidden"></div>
                 </div>
@@ -148,29 +149,25 @@
                             <polyline points="22 4 12 14.01 9 11.01"></polyline>
                         </svg>
                     </div>
-                    <h2>Tiêu Chuẩn Kiểm Tra Pipeline (Job Check)</h2>
+                    <h2>Nhật Ký Thực Nghiệm Pipeline</h2>
                 </div>
                 <div class="card-body">
                     <ul class="checklist">
                         <li class="check-item passed">
                             <span class="check-icon">✓</span>
-                            <span>Tồn tại file <code>index.html</code> trong thư mục gốc</span>
+                            <span>Lần 1: Push bản 1.0 ban đầu ➔ Pipeline PASSED</span>
+                        </li>
+                        <li class="check-item passed">
+                            <span class="check-icon" style="background: rgba(239, 68, 68, 0.2); color: #ef4444;">✗</span>
+                            <span>Lần 2: Xóa thẻ &lt;title&gt; ➔ Job Check FAILED (Chặn lỗi)</span>
                         </li>
                         <li class="check-item passed">
                             <span class="check-icon">✓</span>
-                            <span>Tồn tại file định dạng <code>style.css</code></span>
+                            <span>Lần 3: Khôi phục & nâng cấp v2.0 ➔ Pipeline PASSED</span>
                         </li>
                         <li class="check-item passed">
                             <span class="check-icon">✓</span>
-                            <span>Tồn tại file kịch bản <code>script.js</code></span>
-                        </li>
-                        <li class="check-item passed">
-                            <span class="check-icon">✓</span>
-                            <span>File <code>index.html</code> chứa hợp lệ thẻ <code>&lt;title&gt;</code></span>
-                        </li>
-                        <li class="check-item passed">
-                            <span class="check-icon">✓</span>
-                            <span>Thẻ <code>&lt;h1&gt;</code> chứa họ tên và MSSV: Vũ Hoàng Anh - 1822040470</span>
+                            <span>Website được cập nhật công khai lên GitHub Pages</span>
                         </li>
                     </ul>
                 </div>
@@ -179,7 +176,7 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <p>© 2026 Vũ Hoàng Anh - MSSV: 1822040470 | Bài tập cá nhân: CI/CD Pipeline với GitHub Actions</p>
+            <p>© 2026 Vũ Hoàng Anh - MSSV: 1822040470 | Phiên bản 2.0 - CI/CD Pipeline với GitHub Actions</p>
             <p class="footer-sub">Triển khai công khai tại: <a href="https://hoanguwu007.github.io/devops-1822040470/" target="_blank">https://hoanguwu007.github.io/devops-1822040470/</a></p>
         </footer>
     </div>
@@ -187,4 +184,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
