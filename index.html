@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps CI/CD - Vũ Hoàng Anh - 1822040470</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+
+    <div class="app-container">
+        <!-- Header Banner -->
+        <header class="header">
+            <div class="badge-status">
+                <span class="status-dot"></span>
+                <span>CI/CD Automated Deployment Active</span>
+            </div>
+            <h1 id="main-title">Vũ Hoàng Anh - 1822040470</h1>
+            <p class="subtitle">BÀI TẬP CÁ NHÂN: TRIỂN KHAI WEBSITE TỰ ĐỘNG VỚI GITHUB ACTIONS</p>
+            <div class="meta-tags">
+                <span class="tag">Môn: Phát triển ứng dụng Web</span>
+                <span class="tag tag-accent">Version 1.0</span>
+                <span class="tag tag-success">GitHub Pages</span>
+            </div>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="content-grid">
+            <!-- Card 1: Student Information -->
+            <section class="card info-card">
+                <div class="card-header">
+                    <div class="icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h2>Thông Tin Sinh Viên</h2>
+                </div>
+                <div class="card-body">
+                    <ul class="info-list">
+                        <li>
+                            <span class="label">Họ và tên:</span>
+                            <span class="value highlight">Vũ Hoàng Anh</span>
+                        </li>
+                        <li>
+                            <span class="label">Mã số sinh viên:</span>
+                            <span class="value code-font">1822040470</span>
+                        </li>
+                        <li>
+                            <span class="label">Repository:</span>
+                            <span class="value code-font">devops-1822040470</span>
+                        </li>
+                        <li>
+                            <span class="label">GitHub User:</span>
+                            <span class="value code-font">hoanguwu007</span>
+                        </li>
+                        <li>
+                            <span class="label">Trạng thái:</span>
+                            <span class="badge badge-online">Đang hoạt động (Online)</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Card 2: CI/CD Pipeline Workflow -->
+            <section class="card workflow-card">
+                <div class="card-header">
+                    <div class="icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h2>Quy Trình Pipeline (CI/CD)</h2>
+                </div>
+                <div class="card-body">
+                    <div class="pipeline-steps">
+                        <div class="pipeline-step">
+                            <div class="step-num">1</div>
+                            <div class="step-content">
+                                <h3>Git Push</h3>
+                                <p>Đẩy mã nguồn lên nhánh <code>main</code> trên GitHub</p>
+                            </div>
+                        </div>
+                        <div class="pipeline-arrow">➔</div>
+                        <div class="pipeline-step">
+                            <div class="step-num">2</div>
+                            <div class="step-content">
+                                <h3>Job Check</h3>
+                                <p>Kiểm tra đủ 3 file & thẻ <code>&lt;title&gt;</code></p>
+                            </div>
+                        </div>
+                        <div class="pipeline-arrow">➔</div>
+                        <div class="pipeline-step">
+                            <div class="step-num">3</div>
+                            <div class="step-content">
+                                <h3>Job Deploy</h3>
+                                <p>Tự động xuất bản lên GitHub Pages</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Card 3: Interactive Features (JavaScript) -->
+            <section class="card demo-card">
+                <div class="card-header">
+                    <div class="icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h2>Kiểm Thử Tính Năng Tương Tác (script.js)</h2>
+                </div>
+                <div class="card-body">
+                    <div class="interactive-panel">
+                        <div class="interactive-box">
+                            <span class="box-label">Thời gian thực tế:</span>
+                            <div id="live-clock" class="clock-display">00:00:00</div>
+                        </div>
+                        <div class="interactive-box">
+                            <span class="box-label">Số lượt click tương tác:</span>
+                            <div id="click-counter" class="counter-display">0</div>
+                            <button id="btn-count" class="action-btn">Bấm để tăng số đếm</button>
+                        </div>
+                    </div>
+                    <div class="interactive-actions">
+                        <button id="btn-theme" class="secondary-btn">Đổi giao diện Sáng / Tối</button>
+                        <button id="btn-verify" class="primary-btn">Chạy kiểm tra tự động</button>
+                    </div>
+                    <div id="verification-result" class="verify-box hidden"></div>
+                </div>
+            </section>
+
+            <!-- Card 4: Action Status and Checklist -->
+            <section class="card checklist-card">
+                <div class="card-header">
+                    <div class="icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h2>Tiêu Chuẩn Kiểm Tra Pipeline (Job Check)</h2>
+                </div>
+                <div class="card-body">
+                    <ul class="checklist">
+                        <li class="check-item passed">
+                            <span class="check-icon">✓</span>
+                            <span>Tồn tại file <code>index.html</code> trong thư mục gốc</span>
+                        </li>
+                        <li class="check-item passed">
+                            <span class="check-icon">✓</span>
+                            <span>Tồn tại file định dạng <code>style.css</code></span>
+                        </li>
+                        <li class="check-item passed">
+                            <span class="check-icon">✓</span>
+                            <span>Tồn tại file kịch bản <code>script.js</code></span>
+                        </li>
+                        <li class="check-item passed">
+                            <span class="check-icon">✓</span>
+                            <span>File <code>index.html</code> chứa hợp lệ thẻ <code>&lt;title&gt;</code></span>
+                        </li>
+                        <li class="check-item passed">
+                            <span class="check-icon">✓</span>
+                            <span>Thẻ <code>&lt;h1&gt;</code> chứa họ tên và MSSV: Vũ Hoàng Anh - 1822040470</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 Vũ Hoàng Anh - MSSV: 1822040470 | Bài tập cá nhân: CI/CD Pipeline với GitHub Actions</p>
+            <p class="footer-sub">Triển khai công khai tại: <a href="https://hoanguwu007.github.io/devops-1822040470/" target="_blank">https://hoanguwu007.github.io/devops-1822040470/</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
